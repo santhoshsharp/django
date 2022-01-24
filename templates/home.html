@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i,j in new.items %}
+<center><h1>{{i}}</h1></center>
+{{j|safe}}
+<a href="/download/{{pk}}/{{i}}" class="btn btn-success" style="float:right">download</a>
+{% endfor %}
+</body>
+</html>
